@@ -1,5 +1,5 @@
 class LinkedList
-
+  attr_reader :size, :head, :tail 
   def initialize
     @head = nil
     @tail = nil
@@ -121,18 +121,4 @@ class LinkedList
     end
     value_list.join(' -> ').gsub(/\d/,'( \0 )')
   end
-
-  def size
-    @size
-  end
-
-  def head
-    @head
-  end
-
-  def tail
-    @tail
-  end
-
-
 end
